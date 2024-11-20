@@ -8,6 +8,7 @@
     height: 100vh;
     flex-direction: column;
     padding-inline: 28px;
+    min-width: max(270px, 15%);
     }
 }
 
