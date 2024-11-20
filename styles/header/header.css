@@ -1,0 +1,134 @@
+.header {
+  padding-block: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    display: none;    
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  transition: transform 0.3s ease;
+}
+
+.header__logo > img {
+  width: 1.25rem;
+}
+
+.header__logo > h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.header__logo > h2::after {
+  content: 'v.01';
+  font-size: 0.6rem;
+  padding-left: 2px;
+  font-weight: 500;
+  color: #838383;
+}
+
+.header__logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.custom-dropdown {
+  position: relative;
+}
+
+.selected {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #5932EA;
+  border-radius: 16px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.selected > img {
+  width: 16px;
+  margin: auto 0;
+}
+
+.selected:hover {
+  cursor: pointer;
+  background-color: #6a4cda;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dropdown-options li {
+  padding: 8px;
+  cursor: pointer;
+  color: #9197B3;
+  text-align: center;
+}
+
+.dropdown-options li:hover {
+  background: #f0f0f0;
+}
+
+.dropdown-options li.active {
+  color: black;
+}
+
+.custom-dropdown.open .dropdown-options {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.header__user {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  transition: transform 0.3s ease;
+  
+  @media (min-width:480px) {
+    width: 132px;
+    text-align: center;    
+  }
+}
+
+.header__user > img {
+  width: 2rem;
+  margin: 0 auto;
+}
+
+.header__user > p {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.header__user:hover {
+  transform: scale(1.05);
+  cursor: pointer;  
+}

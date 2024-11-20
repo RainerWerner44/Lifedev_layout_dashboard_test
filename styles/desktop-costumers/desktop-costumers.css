@@ -1,0 +1,137 @@
+.desktop-customers {
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+.desktop-customers > h2 {
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.desktop-customers__table {
+  background-color: white;
+  padding: 0 0 60px;
+  max-width: 968px;
+  margin: 53px auto 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.desktop-customers__table__top {
+  display: flex;
+  padding: 46px 0 0 38px;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.desktop-customers__table__top > .customer-info > h3 {
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: left;
+}
+
+.desktop-customers__table__top > .customer-info > p {
+  color: #16C098;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.desktop-customers__table__top > input {
+  background-image: url('../../assets/icons/search.svg');
+  background-position: 10px center;
+  background-repeat: no-repeat; 
+  background-size: 16px 16px; 
+  padding-left: 30px; 
+  width: 200px;
+  height: 30px;
+  border: none;
+  background-color: #E7E7E7;
+  border-radius: 10px; 
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.customer-table {
+  margin-top: 40px;
+  width: 95%;
+  margin-inline: auto;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 19px 16px;
+  text-align: left;
+}
+
+.customer-table th {
+  font-size: 14px;
+  font-weight: 500;
+  color: #B5B7C0;
+}
+
+.customer-table tbody tr {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.customer-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.customer-table tbody td {
+  font-size: 14px;
+  color: #292D32;
+}
+
+.customer-table .status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 80px;
+  text-align: center;
+}
+
+.customer-table .status.active {
+  background-color: #d1fae5;
+  color: #00B087;
+  border: 1px solid #008767;
+}
+
+.customer-table .status.inactive {
+  background-color: #FFC5C5;
+  color: #DF0404;
+  border: 1px solid #DF0404;
+}
+
+.desktop-customers__table__bottom {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-customers__table__bottom > .pagination {
+  margin: 0;
+}
+
+.desktop-customers__table__bottom > .pagination > ul > li {
+  width: 24px;
+  height: 24px;
+}
+
+.desktop-customers__table__bottom > p {
+  color: #B5B7C0;
+  font-weight: 500;
+  font-size: 14px;
+}

@@ -1,0 +1,30 @@
+@import './header/header.css';
+@import './section-customers/section-customers.css';
+@import './sidebar/sidebar.css';
+@import './desktop-costumers/desktop-costumers.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+  padding-inline: 8px;
+
+  @media (min-width:480px) {
+    padding-left: 16px;
+  }
+}
+
+.desktop-container {
+  display: none;
+  
+  @media (min-width:1200px) {
+    display: flex;
+  }
+}

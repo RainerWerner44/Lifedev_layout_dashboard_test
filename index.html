@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./assets/icons/logo.svg" alt="Logo Icon" />
+          <h2>Dashboard</h2>
+        </div>
+
+        <div class="custom-dropdown">
+          <div class="selected">
+            Customers
+            <img src="./assets/icons/arrow_down.svg" alt="arrow-bottom" />
+          </div>
+          <ul class="dropdown-options">
+            <li data-value="Dashboard">Dashboard</li>
+            <li data-value="Product">Product</li>
+            <li data-value="Customers" class="active">Customers</li>
+            <li data-value="Income">Income</li>
+            <li data-value="Promote">Promote</li>
+            <li data-value="Help">Help</li>
+          </ul>
+        </div>
+
+        <div class="header__user">
+          <img src="./assets/images/user1.png" alt="user Photo" />
+          <p>Evano</p>
+        </div>
+      </header>
+    </div>
+
+    <section class="section-customers">
+      <h2>Hello Evano 👋🏼,</h2>
+
+      <div class="section-customers__list">
+        <div class="section-customers__list__top">
+          <h3>All Customers</h3>
+          <p>Active Members</p>
+          <input type="search" placeholder="Search" />
+        </div>
+
+        <div class="section-customers__list__content">
+          <h5>Showing data 1 to 8 of 256K entries</h5>
+
+          <div class="section-customers__list__content__cards">
+            <article class="section-customers__list__content__card">
+              <div class="section-customers__list__content__card__head">
+                <h4>Jane Cooper</h4>
+                <p class="status--active">Active</p>
+              </div>
+
+              <hr>
+
+              <div class="section-customers__list__content__card__info">
+                <p>Company: <span>Microsoft</span></p>
+                <p>Phone number: <span>(225) 555-0118</span></p>
+                <p>Email: <span>jane@microsoft.com</span></p>
+                <p>Country: <span>United States</span></p>
+              </div>
+            </article>
+
+            <article class="section-customers__list__content__card">
+              <div class="section-customers__list__content__card__head">
+                <h4>Floyd Miles</h4>
+                <p class="status--inactive">Inactive</p>
+              </div>
+
+              <hr>
+
+              <div class="section-customers__list__content__card__info">
+                <p>Company: <span>Yahoo</span></p>
+                <p>Phone number: <span>(205) 555-0100</span></p>
+                <p>Email: <span>floyd@yahoo.com</span></p>
+                <p>Country: <span>Kiribati</span></p>
+              </div>
+            </article>
+
+            <article class="section-customers__list__content__card">
+              <div class="section-customers__list__content__card__head">
+                <h4>Ronald Richards</h4>
+                <p class="status--inactive">Inactive</p>
+              </div>
+
+              <hr>
+
+              <div class="section-customers__list__content__card__info">
+                <p>Company: <span>Adobe</span></p>
+                <p>Phone number: <span>(302) 555-0107</span></p>
+                <p>Email: <span>ronald@adobe.com</span></p>
+                <p>Country: <span>Israel</span></p>
+              </div>
+            </article>
+
+            <article class="section-customers__list__content__card">
+              <div class="section-customers__list__content__card__head">
+                <h4>Marvin McKinney</h4>
+                <p class="status--active">Active</p>
+              </div>
+
+              <hr>
+
+              <div class="section-customers__list__content__card__info">
+                <p>Company: <span>Tesla</span></p>
+                <p>Phone number: <span>(252) 555-0126</span></p>
+                <p>Email: <span>marvin@tesla.com</span></p>
+                <p>Country: <span>Iran</span></p>
+              </div>
+            </article>
+
+            <article class="section-customers__list__content__card">
+              <div class="section-customers__list__content__card__head">
+                <h4>Jerome Bell</h4>
+                <p class="status--active">Active</p>
+              </div>
+
+              <hr>
+
+              <div class="section-customers__list__content__card__info">
+                <p>Company: <span>Google</span></p>
+                <p>Phone number: <span>(629) 555-0129</span></p>
+                <p>Email: <span>jerome@google.com</span></p>
+                <p>Country: <span>Réunion</span></p>
+              </div>
+            </article>
+
+            <article class="section-customers__list__content__card">
+              <div class="section-customers__list__content__card__head">
+                <h4>Kathryn Murphy</h4>
+                <p class="status--active">Active</p>
+              </div>
+
+              <hr>
+
+              <div class="section-customers__list__content__card__info">
+                <p>Company: <span>Microsoft</span></p>
+                <p>Phone number: <span>(406) 555-0120</span></p>
+                <p>Email: <span>kathryn@microsoft.com</span></p>
+                <p>Country: <span>Curaçao</span></p>
+              </div>
+            </article>
+
+            <article class="section-customers__list__content__card">
+              <div class="section-customers__list__content__card__head">
+                <h4>Jacob Jones</h4>
+                <p class="status--active">Active</p>
+              </div>
+
+              <hr>
+
+              <div class="section-customers__list__content__card__info">
+                <p>Company: <span>Yahoo</span></p>
+                <p>Phone number: <span>(208) 555-0112</span></p>
+                <p>Email: <span>jacob@yahoo.com</span></p>
+                <p>Country: <span>Brazil</span></p>
+              </div>
+            </article>
+
+            <article class="section-customers__list__content__card">
+              <div class="section-customers__list__content__card__head">
+                <h4>Kristin Watson</h4>
+                <p class="status--inactive">Inactive</p>
+              </div>
+
+              <hr>
+
+              <div class="section-customers__list__content__card__info">
+                <p>Company: <span>Facebook</span></p>
+                <p>Phone number: <span>(704) 555-0127</span></p>
+                <p>Email: <span>kristin@facebook.com</span></p>
+                <p>Country: <span>Åland Islands</span></p>
+              </div>
+            </article>
+          </div>
+          <div class="pagination">
+            <ul>
+              <li class="arrow-left"></li>
+              <li class="dot--active">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li class="dots">...</li>
+              <li>40</li>
+              <li class="arrow-right"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="desktop-container">
+      <nav class="sidebar">
+        <div class="sidebar__logo">
+          <img src="./assets/icons/logo.svg" alt="Logo Icon" />
+          <h2>Dashboard</h2>
+        </div>
+
+        <ul class="sidebar__nav">
+          <li>
+            <img src="./assets/icons/key-square.svg" alt="nav icon" />
+            <p>Dashboard</p>
+          </li>
+          <li>
+            <img src="./assets/icons/product-icon.svg" alt="nav icon" />
+            <p>Product</p>
+            <img
+              src="./assets/icons/arrow-right-gray.svg"
+              alt="arrow-right-icon"
+              class="arrow-icon"
+            />
+          </li>
+          <li class="active">
+            <img src="./assets/icons/user-square 1.svg" alt="nav icon" />
+            <p>Customers</p>
+            <img
+              src="./assets/icons/arrow-right-gray.svg"
+              alt="arrow-right-icon"
+              class="arrow-icon"
+            />
+          </li>
+          <li>
+            <img src="./assets/icons/income-icon.svg" alt="nav icon" />
+            <p>Income</p>
+            <img
+              src="./assets/icons/arrow-right-gray.svg"
+              alt="arrow-right-icon"
+              class="arrow-icon"
+            />
+          </li>
+          <li>
+            <img src="./assets/icons/promote-icon.svg" alt="nav icon" />
+            <p>Promote</p>
+            <img
+              src="./assets/icons/arrow-right-gray.svg"
+              alt="arrow-right-icon"
+              class="arrow-icon"
+            />
+          </li>
+          <li>
+            <img src="./assets/icons/help-icon.svg" alt="nav icon" />
+            <p>Help</p>
+            <img
+              src="./assets/icons/arrow-right-gray.svg"
+              alt="arrow-right-icon"
+              class="arrow-icon"
+            />
+          </li>
+        </ul>
+
+        <div class="sidebar__user">
+          <img src="./assets/images/user1.png" alt="user Photo" />
+          <div class="sidebar__user__info">
+            <h4>Evano</h4>
+            <p>Project Manager</p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="desktop-customers">
+        <h2>Hello Evano 👋🏼,</h2>
+
+        <div class="desktop-customers__table">
+          <div class="desktop-customers__table__top">
+            <div class="customer-info">
+              <h3>All Customers</h3>
+              <p>Active Members</p>
+            </div>
+            <input type="search" placeholder="Search" />
+          </div>
+
+          <table class="customer-table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td><span class="status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Floyd Miles</td>
+                <td>Yahoo</td>
+                <td>(205) 555-0100</td>
+                <td>floyd@yahoo.com</td>
+                <td>Kiribati</td>
+                <td><span class="status inactive">Inactive</span></td>
+              </tr>
+              <tr>
+                <td>Ronald Richards</td>
+                <td>Adobe</td>
+                <td>(302) 555-0107</td>
+                <td>ronald@adobe.com</td>
+                <td>Israel</td>
+                <td><span class="status inactive">Inactive</span></td>
+              </tr>
+              <tr>
+                <td>Marvin McKinney</td>
+                <td>Tesla</td>
+                <td>(252) 555-0126</td>
+                <td>marvin@tesla.com</td>
+                <td>Iran</td>
+                <td><span class="status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Jerome Bell</td>
+                <td>Google</td>
+                <td>(629) 555-0129</td>
+                <td>jerome@google.com</td>
+                <td>Réunion</td>
+                <td><span class="status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Kathryn Murphy</td>
+                <td>Microsoft</td>
+                <td>(406) 555-0120</td>
+                <td>kathryn@microsoft.com</td>
+                <td>Curaçao</td>
+                <td><span class="status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Jacob Jones</td>
+                <td>Yahoo</td>
+                <td>(208) 555-0112</td>
+                <td>jacob@yahoo.com</td>
+                <td>Brazil</td>
+                <td><span class="status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Kristin Watson</td>
+                <td>Facebook</td>
+                <td>(704) 555-0127</td>
+                <td>kristin@facebook.com</td>
+                <td>Åland Islands</td>
+                <td><span class="status inactive">Inactive</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="desktop-customers__table__bottom">
+            <p>Showing data 1 to 8 of 256K entries</p>
+            
+            <div class="pagination">
+              <ul>
+                <li class="arrow-left"></li>
+                <li class="dot--active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li class="dots">...</li>
+                <li>40</li>
+                <li class="arrow-right"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
